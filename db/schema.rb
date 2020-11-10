@@ -17,8 +17,7 @@ ActiveRecord::Schema.define(version: 2020_11_10_111443) do
     t.text "details"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "completed"
-    t.boolean "admin", default: false
+    t.boolean "completed", default: false
   end
 
 end
