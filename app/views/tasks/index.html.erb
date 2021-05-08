@@ -5,8 +5,12 @@
         <li><input type="checkbox" disabled <%= "checked" if task.completed %>>
           <%= link_to task.name, task_path(task) %></li>
           <%= link_to "Delete", task_path(task), method: :delete, data: {confirm: "Are you sure?"} %>
-          <i class="fas fa-trash-alt"></i>
+          <i class="far fa-trash-alt"></i>
       <% end %>
     </ul>
     <p> <%= link_to "+ Add a new task" , tasks_new_path  %> </p>
 </div>
+
+<i class="far fa-trash-alt"></i>
+
+<i class="fas fa-trash"></i>
